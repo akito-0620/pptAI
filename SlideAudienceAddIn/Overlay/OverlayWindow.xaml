@@ -1,0 +1,34 @@
+<Window x:Class="SlideAudienceAddIn.Overlay.OverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SlideAudience"
+        Width="1280"
+        Height="720"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        Topmost="True"
+        Focusable="False">
+    <Window.Resources>
+        <SolidColorBrush x:Key="PanelBrush" Color="#D91A1D24" />
+        <SolidColorBrush x:Key="TextBrush" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF78E3C4" />
+    </Window.Resources>
+    <Grid IsHitTestVisible="False">
+        <Canvas x:Name="AnimationCanvas"
+                ClipToBounds="False" />
+        <Border x:Name="PanelBorder"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="440"
+                Margin="0,0,48,48"
+                Padding="20,18"
+                Background="{StaticResource PanelBrush}"
+                CornerRadius="8">
+            <StackPanel x:Name="CommentPanel" />
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio user/local files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Signing certificates and generated deployment artifacts
+*.pfx
+*.snk
+*.vsto
+*.manifest
+
+# Local configuration and secrets
+appsettings.local.json
+*.local.json
+.env
+.env.*
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Generated diagnostics/check artifacts
+core-check*.dll
+
+# OS/editor files
+Thumbs.db
+Desktop.ini
+.DS_Store

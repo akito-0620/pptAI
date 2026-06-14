@@ -1,0 +1,27 @@
+# Visual Studio / build outputs
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+# VSTO / Office temporary files
+*.vsto
+*.manifest
+
+# Logs and temporary exports
+logs/
+exports/
+*.jsonl
+*.log
+core-check-*.dll
+
+# Python virtual environment and secrets
+tools/python/.venv/
+tools/python/.env
+**/__pycache__/
+*.pyc
+
+# Generic secrets
+.env
+appsettings.local.json
